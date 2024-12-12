@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct Offer: View {
+    var title = ""
+    var description = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(title)
+                .padding()
+                .font(.title)
+            Text(description)
+                .padding()
+        }
     }
 }
 
 struct Offer_Previews: PreviewProvider {
     static var previews: some View {
-        Offer()
+        Offer(title: "My offer", description: "This is a description")
     }
 }
