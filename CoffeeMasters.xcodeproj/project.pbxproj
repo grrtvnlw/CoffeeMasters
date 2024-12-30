@@ -11,6 +11,7 @@
 		D33F886F2CB0803F00C4D960 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F886E2CB0803F00C4D960 /* ContentView.swift */; };
 		D33F88712CB0804000C4D960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33F88702CB0804000C4D960 /* Assets.xcassets */; };
 		D33F88742CB0804000C4D960 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33F88732CB0804000C4D960 /* Preview Assets.xcassets */; };
+		D3479AF52D232680006F4984 /* OffersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3479AF42D232680006F4984 /* OffersPage.swift */; };
 		D39015042D0B3750007A04BE /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39015032D0B3750007A04BE /* Offer.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +21,7 @@
 		D33F886E2CB0803F00C4D960 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D33F88702CB0804000C4D960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33F88732CB0804000C4D960 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3479AF42D232680006F4984 /* OffersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPage.swift; sourceTree = "<group>"; };
 		D39015032D0B3750007A04BE /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 				D33F886C2CB0803F00C4D960 /* CoffeeMastersApp.swift */,
 				D33F886E2CB0803F00C4D960 /* ContentView.swift */,
 				D39015032D0B3750007A04BE /* Offer.swift */,
+				D3479AF42D232680006F4984 /* OffersPage.swift */,
 				D33F88702CB0804000C4D960 /* Assets.xcassets */,
 				D33F88722CB0804000C4D960 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D39015042D0B3750007A04BE /* Offer.swift in Sources */,
+				D3479AF52D232680006F4984 /* OffersPage.swift in Sources */,
 				D33F886F2CB0803F00C4D960 /* ContentView.swift in Sources */,
 				D33F886D2CB0803F00C4D960 /* CoffeeMastersApp.swift in Sources */,
 			);
