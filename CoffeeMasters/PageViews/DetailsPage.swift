@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct DetailsPage: View {
+
+    @EnvironmentObject var cartManager: CartManager
+    @Environment(\.dismiss) var dismiss
     
     @State private var quantity = 1
+
     var product: Product
     
     var body: some View {
@@ -22,6 +26,13 @@ struct DetailsPage: View {
                 .frame(maxWidth: .infinity)
                 .multilineTextAlignment(.leading)
                 .padding(24)
+            
+            Text(product.description)
+                .frame(maxWidth: .infinity)
+                .multilineTextAlignment(.leading)
+                .padding(24)
+                .foregroundColor(Color("Primary"))
+            
             HStack {
                 Text("$ \(product.price, specifier: "%.2f") ea")
                 Stepper(value: $quantity, in: 1...10) { }
@@ -34,7 +45,8 @@ struct DetailsPage: View {
                 .padding(12)
             
             Button("Add \(quantity) to Cart") {
-                //TODO
+                cartManager.add(product: product, quantity: quantity)
+                dismiss()
             }
                 .padding()
                 .frame(width: 250.0)
@@ -50,6 +62,6 @@ struct DetailsPage: View {
 
 struct DetailsPage_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsPage(product: Product(id: 1, name: "Dummy", price: 1.25))
+        DetailsPage(product: Product(id: 1, name: "Dummy", price: 1.25)).environmentObject(CartManager())
     }
 }
